@@ -14,7 +14,7 @@ function countReducer(state, action){
     if(action.type === 'RESET')
         return init(0);
     
-    throw new Error(action + ' is not defined in count reducer.');
+    throw new Error(action.type + ' is not defined in count reducer.');
 }
 
 export default function Count() {
